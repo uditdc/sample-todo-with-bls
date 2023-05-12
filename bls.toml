@@ -1,0 +1,16 @@
+name = "to doapp"
+version = "1.0.0"
+
+[deployment]
+permission = "private"
+nodes = 4
+
+[build]
+dir = "build"
+entry = "to-doapp_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "to-doapp.wasm"
+command = "npm run build:release"
